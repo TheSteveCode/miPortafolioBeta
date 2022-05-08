@@ -1,0 +1,282 @@
+/*
+        |HEX: #004D85          RGB: (0, 77, 133)
+        |HEX: #003A63          RGB: (0, 58, 99)
+        |HEX: #F2F2F2          RGB: (242, 242, 242)
+        |HEX: #404040          RGB: (64, 64, 64)
+        |HEX: #0D0D0D          RGB: (13, 13, 13)
+        */
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace;
+            margin: 0;
+            
+            
+        }
+        
+        @keyframes header {
+            0% { background-image: radial-gradient(#0D0D0D 50%, #303030); 
+            color: #E2E2E2;}
+            25% { background-image: radial-gradient(#0D0D0D 50%, #202020); 
+            color: #D2D2D2;}
+            50% { background-image: radial-gradient(#0D0D0D 50%, #151515); 
+            color: #C2C2C2;}
+            75% { background-image: radial-gradient(#0D0D0D 50%, #202020); 
+            color: #B2B2B2;}
+            100% { background-image: radial-gradient(#0D0D0D 50%, #303030); 
+            color: #A2A2A2;}
+            
+            
+        }
+
+        .header {
+            padding: 80px;
+            text-align: center;
+            background-image: radial-gradient(#0D0D0D 50%, #404040);
+            animation-name: header;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            color: #F2F2F2;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+        
+        .header p {
+            color: #F2F2F2;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #404040;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            border: 1px solid rgba(242, 242, 242, 0.5);
+            border-radius: 0px 0px 20px;
+            box-shadow: rgba(242, 242, 242, 0.5) 2px 2px 5px;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #111;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+        }
+
+        .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: #F2F2F2;
+            padding: 20px;
+            color: #0D0D0D;
+        }
+
+        .main {
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: #F2F2F2;
+            padding: 20px;
+            color: #0D0D0D;
+
+        }
+        
+        @keyframes image{
+            
+            0% { background-image: radial-gradient(circle, #0D0D0D, #004D85, #404040); }
+            25% { background-image: radial-gradient(circle, #0D0D0D, #F2F2F2, #404040); }
+            50% { background-image: radial-gradient(circle, #0D0D0D, #404040, #004D85); }
+            75% { background-image: radial-gradient(circle, #0D0D0D, #404040, #F2F2F2); 
+            color: #0D0D0D;}
+        }
+
+        .image {
+            
+            width: 100%;
+            padding: 50px;
+            border-radius: 0px 0px 60px;
+            color: #F2F2F2;
+            background-image: radial-gradient(circle, #0D0D0D, #004D85, #404040);
+            animation-name: image;
+            animation-duration: 2s;
+            
+
+        }
+
+        .footer {
+            background-color: #404040;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+            p, .navbar a, ul li {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 1025px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+            
+            p, .navbar a, ul li {
+                font-size: 20px;
+            }
+        }
+
+        .myImage {
+            
+            width: 100%;
+            padding: 100px;
+            background-image: radial-gradient(circle, #0D0D0D, #004D85, #404040);
+            border-radius: 0px 0px 20px;
+            color: #F2F2F2;
+            text-shadow:  rgba(242, 242, 242, 0.5) 2px 2px 5px;
+            
+                
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+            
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        #btn_card {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+            
+        }
+
+        #btn_card, .card a:hover {
+            opacity: 0.7;
+        }
+
+        .avatar {
+            border-radius: 100%;
+            
+        }
+        
+        .myData{
+            border-top: 5px;
+            
+        }
+        
+        .sectionHeader {
+            width: 35%;
+            background-color: #003A63;
+            color: #F2F2F2;
+            border-radius: 0px 0px 60px;
+            margin: 0px;
+            padding: 5px;
+        }
+        
+        .h2Box {
+            
+            padding: 0px;
+            border-top: 2px solid #003A63;
+            
+        }
+        
+        .letterEffect {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 40px;
+        }
+        
+        .letterEffectHeader {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 80px;
+            
+        }
+        
+        
+        .header h1 .fraseEffectHeader {
+            font-size: 20px;
+        }
+        
+        
+        ul li {
+            
+            margin: 20px;
+        }
+        
+        .socialL {
+            background-color: darkblue;
+            padding: 5px;
+        }
+        
+        .socialF {
+            background-color: blue;
+            padding: 5px;
+        }
+        .socialT {
+            background-color: deepskyblue;
+            padding: 5px;
+        }
+
+        .footer {
+            color: white;
+        }
+
+        .footer a{
+            text-decoration: none;
+            color: white;
+        }
