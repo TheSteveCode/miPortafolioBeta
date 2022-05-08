@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Esteban López C | Projects</title>
+    <style>
+        
+        /*
+        |HEX: #004D85          RGB: (0, 77, 133)
+        |HEX: #003A63          RGB: (0, 58, 99)
+        |HEX: #F2F2F2          RGB: (242, 242, 242)
+        |HEX: #404040          RGB: (64, 64, 64)
+        |HEX: #0D0D0D          RGB: (13, 13, 13)
+        */
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace;
+            margin: 0;
+            
+            
+        }
+        
+        @keyframes header {
+            0% { background-image: radial-gradient(#0D0D0D 50%, #303030); 
+            color: #E2E2E2;}
+            25% { background-image: radial-gradient(#0D0D0D 50%, #202020); 
+            color: #D2D2D2;}
+            50% { background-image: radial-gradient(#0D0D0D 50%, #151515); 
+            color: #C2C2C2;}
+            75% { background-image: radial-gradient(#0D0D0D 50%, #202020); 
+            color: #B2B2B2;}
+            100% { background-image: radial-gradient(#0D0D0D 50%, #303030); 
+            color: #A2A2A2;}
+            
+            
+        }
+
+        .header {
+            padding: 80px;
+            text-align: center;
+            background-image: radial-gradient(#0D0D0D 50%, #404040);
+            animation-name: header;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            color: #F2F2F2;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+        
+        .header p {
+            color: #F2F2F2;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #404040;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            border: 1px solid rgba(242, 242, 242, 0.5);
+            border-radius: 0px 0px 20px;
+            box-shadow: rgba(242, 242, 242, 0.5) 2px 2px 5px;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #111;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+        }
+
+        .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: #F2F2F2;
+            padding: 20px;
+            color: #0D0D0D;
+        }
+
+        .main {
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: #F2F2F2;
+            padding: 20px;
+            color: #0D0D0D;
+
+        }
+        
+        @keyframes image{
+            
+            0% { background-image: radial-gradient(circle, #0D0D0D, #004D85, #404040); }
+            25% { background-image: radial-gradient(circle, #0D0D0D, #F2F2F2, #404040); }
+            50% { background-image: radial-gradient(circle, #0D0D0D, #404040, #004D85); }
+            75% { background-image: radial-gradient(circle, #0D0D0D, #404040, #F2F2F2); 
+            color: #0D0D0D;}
+        }
+
+        .image {
+            
+            width: 100%;
+            padding: 50px;
+            border-radius: 0px 0px 60px;
+            color: #F2F2F2;
+            background-image: radial-gradient(circle, #0D0D0D, #004D85, #404040);
+            animation-name: image;
+            animation-duration: 2s;
+            
+
+        }
+
+        .footer {
+            background-color: #404040;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+            p, .navbar a, ul li {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 1025px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+            
+            p, .navbar a, ul li {
+                font-size: 20px;
+            }
+        }
+
+        .myImage {
+            
+            width: 100%;
+            padding: 100px;
+            background-image: radial-gradient(circle, #0D0D0D, #004D85, #404040);
+            border-radius: 0px 0px 20px;
+            color: #F2F2F2;
+            text-shadow:  rgba(242, 242, 242, 0.5) 2px 2px 5px;
+            
+                
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+            
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        #btn_card {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+            
+        }
+
+        #btn_card, .card a:hover {
+            opacity: 0.7;
+        }
+
+        .avatar {
+            border-radius: 100%;
+            
+        }
+        
+        .myData{
+            border-top: 5px;
+            
+        }
+        
+        .sectionHeader {
+            width: 35%;
+            background-color: #003A63;
+            color: #F2F2F2;
+            border-radius: 0px 0px 60px;
+            margin: 0px;
+            padding: 5px;
+        }
+        
+        .h2Box {
+            
+            padding: 0px;
+            border-top: 2px solid #003A63;
+            
+        }
+        
+        .letterEffect {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 40px;
+        }
+        
+        .letterEffectHeader {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 80px;
+            
+        }
+        
+        
+        .header h1 .fraseEffectHeader {
+            font-size: 20px;
+        }
+        
+        
+        ul li {
+            
+            margin: 20px;
+        }
+        
+        .socialL {
+            background-color: darkblue;
+            padding: 5px;
+        }
+        
+        .socialF {
+            background-color: blue;
+            padding: 5px;
+        }
+        .socialT {
+            background-color: deepskyblue;
+            padding: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><span class="letterEffectHeader">J</span>uan Esteban López | <span class="fraseEffectHeader">P r o j e c t s</span></h1>
+      <p>Portafolio de proyectos | 2022.</p>
+    </div>
+
+    <div class="navbar">
+      <a href="#" class="active">Inicio</a>
+      <a href="#about">Acerca de mi</a>
+      <a href="#sSkills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#formation">Formación</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact" class="right">Contacto</a>
+    </div>
+
+    <div class="row">
+      <div class="side">
+
+        <div class="card">
+            <div class="myImage" style="height: 300px"><h2>Presentación:</h2>
+            </div>
+            
+            <div class="myData">
+                <h1>Juan Esteban López</h1>
+            <p class="title">Desarrollador Frontend y backend</p>
+            <p class="title">33 años</p>
+            <p class="title">Colombia</p>
+            <p>UPB</p>
+            <a href="#"><div class="socialL"><img src="linked.png" alt=""></div></a>
+            <a href="#"><div class="socialF"><img src="facebook.png" alt=""></div></a>
+            <a href="#"><div class="socialT"><img src="twitter.png" alt=""></div></a>
+            </div>
+            
+            <p><button id="btn_card">Contacto</button></p>
+        </div>
+
+        <h2 id="about">Acerca de mi</h2>
+        
+        <img src="avatar.png" alt="perfil" width= "100%" class="avatar">
+        
+        <p>
+          Hola! Soy <strong>Juan Esteban Lopez Carabali</strong>, tengo 33 años, Soy programador de software y de aplicaciones web graduado de la <strong>Universidad Pontificia Bolivariana de Medellin - Colombia(UPB)</strong> programa <strong>Misión TIC</strong> y parte del programa <strong>next education de oracle y Alura</strong>.
+        </p>
+        <h3>Influencias</h3>
+        <p>
+          Hay muchas personas que me han ayudado a ser quien soy y me han aportado en mi proceso de aprendizaje en programación pero destaco algunas en particular como lo son mis tutores e instructores de la upb(universidad pontifica bolivariana de medellin)e instructores de Alura, quienes me enfocaron muy bien por el camino correcto en la tecnología.
+        </p>
+        <div class="image" style="height: 60px">Imagen</div>
+        <br />
+        <div class="image" style="height: 60px">Imagen</div>
+        <br />
+        <div class="image" style="height: 60px">Imagen</div>
+      </div>
+
+      <div class="main">
+       <div class="section">
+       <div class="h2Box">
+       <h2 class="sectionHeader" id="sSkills">Habilidades blandas</h2>
+       </div>
+        <h5>Conozca un poco acerca de las habilidades blandas que tengo.</h5>
+        <div class="image" style="height: 200px"><p><span class="letterEffect">S</span> O F T <marquee behavior="" direction=""><br>S K I L L S</marquee></p></div>
+        <p>Habilidades...</p>
+        <p>
+          Dentro de las habilidades blandas que tengo puedo destacar:
+        </p>
+        <ul>
+        <li>El trabajo en equipo</li>
+        <li>la escucha activa</li>
+        <li>El liderazgo</li>
+        <li>Inteligencia emocional</li>
+        <li>automotivación</li>
+        <li>Resilencia</li>
+        <li>Ética profesional</li>
+        <li>Comunicación Efectiva</li>
+        <li>Responsabilidad</li>
+        <li>Puntualidad</li>
+        <li>Gestión eficiente del tiempo</li>
+        <li>Resolución de problemas</li>
+        </ul>
+        
+        </div>
+        
+        <br />
+        
+        <div class="section">
+        <div class="h2Box">
+       <h2 class="sectionHeader" id="hobbies">Hobbies</h2>
+       </div>
+        
+        <h5>Conozca un poco acerca de mis aficiones y pasiones.</h5>
+        <div class="image" style="height: 200px"><p><span class="letterEffect">H</span> O B B I E S <marquee behavior="" direction=""><br>P A S I O N E S</marquee></p></div>
+        <p>Hobbies...</p>
+        <p>
+          Lo mejor siempre será disfrutar de lo que a uno le gusta hacer por eso aquí podrá ver mis hobbies y gustos.
+        </p>
+        <ul>
+        <li>La música</li>
+        <li>La lectura</li>
+        <li>La cocina</li>
+        </ul>
+        </div>
+        
+        <br />
+        
+        <div class="section">
+        <div class="h2Box">
+       <h2 class="sectionHeader" id="formation">Formación y cursos.</h2>
+       </div>
+        
+        <h5>Encuentre información acerca de lo que he adquirido en conocimientos tecnológicos.</h5>
+        <div class="image" style="height: 200px"><p><span class="letterEffect">F</span> O R M A C I Ó N <marquee behavior="" direction=""><br>C U R S O S</marquee></p></div>
+        <p>Formación y cursos...</p>
+        <p>
+          Esta es la lista de las diferentes formaciones en tecnología desde 2019 hasta 2022 que me han servido en el camino como freelance y autodidácta en el sector TIC también programas con certificación como el programa Misión TIC avalado por el Gobierno de colombia(MinTic) Junto a la Universidad pontificia Bolibariana de Medellin.
+        </p>
+        <ul>
+        <li>Oracle Next Education(ONE) y Alura Latam| | Programación | Actual</li>
+        <li>Universidad Pontificia Bolivariana de medellin | 2021- 2022.</li>
+        <li>Otros cursos cortos via web:
+        <ul>
+            <li>Capacitate para el empleo(MX) | Curador de datos</li>
+            <li>Linkedln | Fundamentos esenciales de la programación | Marzo 2021</li>
+            <li>Linkedln | Photoshop CC práctico: Retoque de piel | Enero 2021</li>
+            <li>Linkedln | Fundamentos del desarrollo web: Full Stack o Front-end | Julio 2020.</li>
+            <li>Capacítate para el empleo | Finder</li>
+            <li>Capacítate para el empleo | Técnico en seguridad infórmatica (análisis de riesgos)</li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        <br />
+        
+        <div class="section">
+        <div class="h2Box">
+       <h2 class="sectionHeader" id="projects">Experiencia</h2>
+       </div>
+        
+        <h5>Conozca acerca de los proyectos y recorrido en tecnología que he logrado obtener.</h5>
+        <div class="image" style="height: 200px"><p><span class="letterEffect">E</span> X P E R I E N C I A <marquee behavior="" direction=""><br>P R O Y E C T O S</marquee></p></div>
+        <p>Experiencia...</p>
+        <p>
+          Puede revisar cada uno de mis proyectos y las habilidades que tengo en tecnología en el siguiente espacio.
+          
+          <a href="#">Github</a>
+        </p>
+        </div>
+        
+        <br />
+        <div class="section">
+        <div class="h2Box">
+       <h2 class="sectionHeader" id="contact">Contacto</h2>
+       </div>
+        
+        <h5>Si usted desea tener un aceracmiento directo conmigo, aquí está mi zona de contacto.</h5>
+        <div class="image" style="height: 200px"><p><span class="letterEffect">C</span> O N T A C T O <marquee behavior="" direction=""><br>C O N T A C T</marquee></p></div>
+        <p>Contacto...</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
