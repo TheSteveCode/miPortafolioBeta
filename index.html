@@ -3,208 +3,368 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name=”theme-color” content=”#004D85” />
+    <meta name="theme-color" content="#004D85" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan Esteban López C | Projects</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
+    
+    <!-- HEADER SECTION -->
     <div class="header">
-      <h1><span class="letterEffectHeader">J</span>uan Esteban López | <span class="fraseEffectHeader">P r o j e c t s</span></h1>
-      <p>Portafolio de proyectos | 2022.</p>
-    </div>
+      <div class="content">
+        <h1>
+          <span class="letterEffectHeader">J</span>uan Esteban López |
+          <span class="fraseEffectHeader">P r o j e c t s</span>
+        </h1>
+        <p>Portafolio de proyectos 2022.</p>
 
-    <div class="navbar">
-      <a href="#" class="active"><i class="material-icons">home</i> Inicio</a>
-      <a href="#about"><i class="material-icons">person</i> Acerca de mi</a>
-      <a href="#sSkills"><i class="material-icons">laptop_windows</i> Skills</a>
-      <a href="#hobbies"><i class="material-icons">accessibility</i> Hobbies</a>
-      <a href="#formation"><i class="material-icons">school</i> Formación</a>
-      <a href="#projects"><i class="material-icons">folder</i> Proyectos</a>
-      <a href="#contact" class="right"><i class="material-icons">contacts</i> Contacto</a>
+        <button>CV</button>
+      </div>
+      
     </div>
+    <!-- HEADER END -->
+    
+   
 
     <div class="row">
-      <div class="side">
 
+ <!-- NAVBAR SECTION -->
+ <div class="col-12 col-s-12 navbar">
+  <a href="#" class="active"><i class="material-icons">home</i> Inicio</a>
+  <a href="#about"><i class="material-icons">person</i> Acerca de mi</a>
+  <a href="#sSkills"><i class="material-icons">laptop_windows</i> Skills</a>
+  <a href="#hobbies"><i class="material-icons">accessibility</i> Hobbies</a>
+  <a href="#formation"><i class="material-icons">school</i> Formación</a>
+  <a href="#projects"><i class="material-icons">folder</i> Proyectos</a>
+  <a href="#contact" class="right"
+    ><i class="material-icons">contacts</i> Contacto</a
+  >
+</div>
+<!-- NAVBAR END -->
+
+    <div class="col-12 col-s-12 left-side">
         <div class="card">
-            <div class="myImage" style="height: 300px"><h2>Presentación:</h2>
-            </div>
-            
-            <div class="myData">
-                <h1>Juan Esteban López</h1>
-            <p class="title">Desarrollador Frontend y backend</p>
+          <div class="myImage" style="height: 300px">
+            <h2>Presentación:</h2>
+          </div>
+
+          <div class="myData">
+            <h1>Juan Esteban López C</h1>
+            <p class="title">Desarrollador Front-end y back-end</p>
             <p class="title">33 años</p>
-            <p class="title">Colombia</p>
-            <p>UPB</p>
-            <a href="#"><div class="socialL"><img src="linked.png" alt=""></div></a>
-            <a href="#"><div class="socialF"><img src="facebook.png" alt=""></div></a>
-            <a href="#"><div class="socialT"><img src="twitter.png" alt=""></div></a>
-            </div>
-            
-            <p><button id="btn_card">Contacto</button></p>
+            <p class="title">Cali - Colombia</p>
+            <p>Tecnologías: HTML, CSS, JavaScript, MySql, github, Java, Python, React, NodeJs, MongoDB.</p>
+            <p>Idiomas: Inglés Básico-Intermedio</p>
+            <a href="#"
+              ><div class="socialL"><img src="linked.png" alt="" /></div
+            ></a>
+            <a href="#"
+              ><div class="socialF"><img src="facebook.png" alt="" /></div
+            ></a>
+            <a href="#"
+              ><div class="socialT"><img src="twitter.png" alt="" /></div
+            ></a>
+          </div>
+
+          <p><button id="btn_card">Contacto</button></p>
         </div>
 
+        
+      <div class="aboutMe">
         <h2 id="about"><i class="material-icons">person</i> Acerca de mi</h2>
+        <div class="avatarContainer">
+          <img src="avatar.png" alt="perfil" width="100%" class="avatar" id="avatar"/>
+        </div>
         
-        <img src="avatar.png" alt="perfil" width= "100%" class="avatar">
-        
+
         <p>
-          Hola! Soy <strong>Juan Esteban Lopez Carabali</strong>, tengo 33 años, Soy programador de software y de aplicaciones web graduado de la <strong>Universidad Pontificia Bolivariana de Medellin - Colombia(UPB)</strong> programa <strong>Misión TIC</strong> y parte del programa <strong>next education de oracle y Alura</strong>.
+          Hola! Soy <strong>Juan Esteban Lopez Carabali</strong>, tengo 33 años,
+          Soy programador de software y de aplicaciones web graduado de la
+          <strong
+            >Universidad Pontificia Bolivariana de Medellin -
+            Colombia(UPB)</strong
+          >
+          programa <strong>Misión TIC</strong> y parte del programa
+          <strong>next education de oracle y Alura</strong>.
         </p>
         <h3>Influencias</h3>
         <p>
-          Hay muchas personas que me han ayudado a ser quien soy y me han aportado en mi proceso de aprendizaje en programación pero destaco algunas en particular como lo son mis tutores e instructores de la upb(universidad pontifica bolivariana de medellin)e instructores de Alura, quienes me enfocaron muy bien por el camino correcto en la tecnología.
+          Hay muchas personas que me han ayudado a ser quien soy y me han
+          aportado en mi proceso de aprendizaje en programación pero destaco
+          algunas en particular como lo son mis tutores e instructores de la
+          upb(universidad pontifica bolivariana de medellin)e instructores de
+          Alura, quienes me enfocaron muy bien por el camino correcto en la
+          tecnología.
         </p>
-        <div class="image" style="height: 60px"><i class="material-icons">code</i></div>
-        <br />
-        <div class="image" style="height: 60px"><i class="material-icons">work</i></div>
-        <br />
-        <div class="image" style="height: 60px"><i class="material-icons">web</i></div>
-      </div>
-
-      <div class="main">
-       <div class="section">
-       <div class="h2Box">
-       <h2 class="sectionHeader" id="sSkills">Habilidades blandas</h2>
-       </div>
-        <h5>Conozca un poco acerca de las habilidades blandas que tengo.</h5>
-        <div class="image" style="height: 200px"><p><span class="letterEffect">S</span> O F T <marquee behavior="" direction=""><br>S K I L L S</marquee></p></div>
-        <p>Habilidades...</p>
-        <p>
-          Dentro de las habilidades blandas que tengo puedo destacar:
-        </p>
-        <ul>
-        <li>El trabajo en equipo</li>
-        <li>la escucha activa</li>
-        <li>El liderazgo</li>
-        <li>Inteligencia emocional</li>
-        <li>automotivación</li>
-        <li>Resilencia</li>
-        <li>Ética profesional</li>
-        <li>Comunicación Efectiva</li>
-        <li>Responsabilidad</li>
-        <li>Puntualidad</li>
-        <li>Gestión eficiente del tiempo</li>
-        <li>Resolución de problemas</li>
-        </ul>
-        
-        </div>
-        
-        <br />
-        
-        <div class="section">
-        <div class="h2Box">
-       <h2 class="sectionHeader" id="hobbies"><i class="material-icons">accessibility</i> Hobbies</h2>
-       </div>
-        
-        <h5>Conozca un poco acerca de mis aficiones y pasiones.</h5>
-        <div class="image" style="height: 200px"><p><span class="letterEffect">H</span> O B B I E S <marquee behavior="" direction=""><br>P A S I O N E S</marquee></p></div>
-        <p>Hobbies...</p>
-        <p>
-          Lo mejor siempre será disfrutar de lo que a uno le gusta hacer por eso aquí podrá ver mis hobbies y gustos.
-        </p>
-        <ul>
-        <li>
-            <i class="material-icons">equalizer</i> <h3>Música</h3> 
-        </li>
-        <li>
-            <i class="material-icons">import_contacts</i> <h3>Lectura</h3> 
-        </li>
-        <li>
-            <i class="material-icons">restaurant_menu</i> <h3>Cocina</h3> 
-        </li>
-        </ul>
-        </div>
-        
-        <br />
-        
-        <div class="section">
-        <div class="h2Box">
-       <h2 class="sectionHeader" id="formation"><i class="material-icons">school</i> Formación y cursos.</h2>
-       </div>
-        
-        <h5>Encuentre información acerca de lo que he adquirido en conocimientos tecnológicos.</h5>
-        <div class="image" style="height: 200px"><p><span class="letterEffect">F</span> O R M A C I Ó N <marquee behavior="" direction=""><br>C U R S O S</marquee></p></div>
-        <p>Formación y cursos...</p>
-        <p>
-          Esta es la lista de las diferentes formaciones en tecnología desde 2019 hasta 2022 que me han servido en el camino como freelance y autodidácta en el sector TIC también programas con certificación como el programa Misión TIC avalado por el Gobierno de colombia(MinTic) Junto a la Universidad pontificia Bolibariana de Medellin.
-        </p>
-        <ul>
-        <li>Oracle Next Education(ONE) y Alura Latam| | Programación | Actual</li>
-        <li>Universidad Pontificia Bolivariana de medellin | 2021- 2022.</li>
-        <li>Otros cursos cortos via web:
-        <ul>
-            <li>Capacitate para el empleo(MX) | Curador de datos</li>
-            <li>Linkedln | Fundamentos esenciales de la programación | Marzo 2021</li>
-            <li>Linkedln | Photoshop CC práctico: Retoque de piel | Enero 2021</li>
-            <li>Linkedln | Fundamentos del desarrollo web: Full Stack o Front-end | Julio 2020.</li>
-            <li>Capacítate para el empleo | Finder</li>
-            <li>Capacítate para el empleo | Técnico en seguridad infórmatica (análisis de riesgos)</li>
-        </ul>
-        </li>
-        </ul>
+        <div class="image" style="height: 60px">
+          <i class="material-icons">code</i>
         </div>
         <br />
-        
-        <div class="section">
-        <div class="h2Box">
-       <h2 class="sectionHeader" id="projects"><i class="material-icons">folder</i> Experiencia - proyectos</h2>
-       </div>
-        
-        <h5>Conozca acerca de los proyectos y recorrido en tecnología que he logrado obtener.</h5>
-        <div class="image" style="height: 200px"><p><span class="letterEffect">E</span> X P E R I E N C I A <marquee behavior="" direction=""><br>P R O Y E C T O S</marquee></p></div>
-        
-        <h3>Proyectos..</h3>
-        <ul>
-            <li>
-                <h3>Encriptador - Desencriptador web HTML_CSS_JAVASCRIPT</h3>
-               <p>
-                <a href="https://encriptador-juan-esteban-lopez.netlify.app/">encriptador-juan-esteban-lopez.netlify.app</a>
-               </p> 
-               <p>
-                   Pequeño programa que tiene la caracteristica de cifrar o encriptar cualquier palabra, frase o texto que desee.
-               </p>
-            </li>
-            <li>
-                <h3>To do list o lista de tareas</h3>
-               <p>
-                <a href="https://todolistecs.netlify.app/">todolistecs.netlify.app</a>
-               </p> 
-               <p>
-                   Agregue, subraye o elimine una tarea online con está rápida herramienta.
-               </p>
-            </li>
-        </ul>
-        <p>
-         Para ver más proyectos realizados puede visitar mi página en <a href="https://github.com"> Github</a> y revisar otros códigos y projectos desarrollados.
-          <a href="https://github.com/elcodigosteve">https://github.com/elcodigosteve</a>
-        </p>
+        <div class="image" style="height: 60px">
+          <i class="material-icons">work</i>
         </div>
-        
         <br />
-        <div class="section">
-        <div class="h2Box">
-       <h2 class="sectionHeader" id="contact"><i class="material-icons">contacts</i> Contacto</h2>
-       </div>
-        
-        <h5>Si usted desea tener un aceracmiento directo conmigo, aquí está mi zona de contacto.</h5>
-        <div class="image" style="height: 200px"><p><span class="letterEffect">C</span> O N T A C T O <marquee behavior="" direction=""><br>C O N T A C T</marquee></p></div>
-        <p>Contacto...</p>
+        <div class="image" style="height: 60px">
+          <i class="material-icons">web</i>
         </div>
-        
       </div>
     </div>
+
+      <div class="col-12 col-s-12 main">
+
+        <div class="h2Box">
+          <h2 class="sectionHeader" id="sSkills">Habilidades blandas</h2>
+        </div>
+        <div class="section">
+          
+          <h5>Conozca un poco acerca de las habilidades blandas que tengo.</h5>
+          <div class="image" style="height: 200px">
+            <p>
+              <span class="letterEffect">S</span> O F T
+              <marquee behavior="" direction=""><br />S K I L L S</marquee>
+            </p>
+          </div>
+          <p>Habilidades...</p>
+          <p>Dentro de las habilidades blandas que tengo puedo destacar:</p>
+          <ul>
+            <li>El trabajo en equipo</li>
+            <li>la escucha activa</li>
+            <li>El liderazgo</li>
+            <li>Inteligencia emocional</li>
+            <li>automotivación</li>
+            <li>Resilencia</li>
+            <li>Ética profesional</li>
+            <li>Comunicación Efectiva</li>
+            <li>Responsabilidad</li>
+            <li>Puntualidad</li>
+            <li>Gestión eficiente del tiempo</li>
+            <li>Resolución de problemas</li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div class="h2Box">
+          <h2 class="sectionHeader" id="hobbies">
+            <i class="material-icons">accessibility</i> Hobbies
+          </h2>
+        </div>
+        <div class="section">
+          
+
+          <h5>Conozca un poco acerca de mis aficiones y pasiones.</h5>
+          <div class="image" style="height: 200px">
+            <p>
+              <span class="letterEffect">H</span> O B B I E S
+              <marquee behavior="" direction=""><br />P A S I O N E S</marquee>
+            </p>
+          </div>
+          <p>Hobbies...</p>
+          <p>
+            Lo mejor siempre será disfrutar de lo que a uno le gusta hacer por
+            eso aquí podrá ver mis hobbies y gustos.
+          </p>
+          <ul>
+            <li>
+              <i class="material-icons">equalizer</i>
+              <h3>Música</h3>
+            </li>
+            <li>
+              <i class="material-icons">import_contacts</i>
+              <h3>Lectura</h3>
+            </li>
+            <li>
+              <i class="material-icons">restaurant_menu</i>
+              <h3>Cocina</h3>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+
+        <div class="h2Box">
+          <h2 class="sectionHeader" id="formation">
+            <i class="material-icons">school</i> Formación y cursos. 
+          </h2>
+        </div>
+        <div class="section">
+          
+          <h5>
+            Encuentre información acerca de lo que he adquirido en conocimientos
+            tecnológicos.
+          </h5>
+          <div class="image" style="height: 200px">
+            <p>
+              <span class="letterEffect">F</span> O R M A C I Ó N
+              <marquee behavior="" direction=""><br />C U R S O S</marquee>
+            </p>
+          </div>
+          <p>Formación y cursos...</p>
+          <p>
+            Esta es la lista de las diferentes formaciones en tecnología desde
+            2019 hasta 2022 que me han servido en el camino como freelance y
+            autodidácta en el sector TIC también programas con certificación
+            como el programa Misión TIC avalado por el Gobierno de
+            colombia(MinTic) Junto a la Universidad pontificia Bolibariana de
+            Medellin.
+          </p>
+          <ul>
+            <li>
+              Oracle Next Education(ONE) y Alura Latam| | Programación | Actual
+            </li>
+            <li>
+              Universidad Pontificia Bolivariana de medellin | 2021- 2022.
+            </li>
+            <li>
+              Otros cursos cortos via web:
+              <ul>
+                <li>Capacitate para el empleo(MX) | Curador de datos</li>
+                <li>
+                  Linkedln | Fundamentos esenciales de la programación | Marzo
+                  2021
+                </li>
+                <li>
+                  Linkedln | Photoshop CC práctico: Retoque de piel | Enero 2021
+                </li>
+                <li>
+                  Linkedln | Fundamentos del desarrollo web: Full Stack o
+                  Front-end | Julio 2020.
+                </li>
+                <li>Capacítate para el empleo | Finder</li>
+                <li>
+                  Capacítate para el empleo | Técnico en seguridad infórmatica
+                  (análisis de riesgos)
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <br />
+
+
+        <div class="h2Box">
+          <h2 class="sectionHeader" id="projects">
+            <i class="material-icons">folder</i> Experiencia - proyectos
+          </h2>
+        </div>
+        <div class="section">
+          
+          <h5>
+            Conozca acerca de los proyectos y recorrido en tecnología que he
+            logrado obtener.
+          </h5>
+          <div class="image" style="height: 200px">
+            <p>
+              <span class="letterEffect">E</span> X P E R I E N C I A
+              <marquee behavior="" direction=""
+                ><br />P R O Y E C T O S</marquee
+              >
+            </p>
+          </div>
+
+          <h3>Proyectos..</h3>
+          <ul>
+            <li>
+              <h3>Encriptador - Desencriptador web HTML_CSS_JAVASCRIPT</h3>
+              <p>
+                <a href="https://encriptador-juan-esteban-lopez.netlify.app/"
+                  >encriptador-juan-esteban-lopez.netlify.app</a
+                >
+              </p>
+              <p>
+                Pequeño programa que tiene la caracteristica de cifrar o
+                encriptar cualquier palabra, frase o texto que desee.
+              </p>
+            </li>
+            <li>
+              <h3>To do list o lista de tareas</h3>
+              <p>
+                <a href="https://todolistecs.netlify.app/"
+                  >todolistecs.netlify.app</a
+                >
+              </p>
+              <p>
+                Agregue, subraye o elimine una tarea online con está rápida
+                herramienta.
+              </p>
+            </li>
+          </ul>
+          <p>
+            Para ver más proyectos realizados puede visitar mi página en
+            <a href="https://github.com"> Github</a> y revisar otros códigos y
+            projectos desarrollados.
+            <a href="https://github.com/elcodigosteve"
+              >https://github.com/elcodigosteve</a
+            >
+          </p>
+        </div>
+
+        <br />
+
+        <div class="h2Box">
+          <h2 class="sectionHeader" id="contact">
+            <i class="material-icons">contacts</i> Contacto
+          </h2>
+        </div>
+        <div class="section">
+      
+
+          <h5>
+            Si usted desea tener un acercamiento directo conmigo, aquí está mi
+            zona de contacto.
+          </h5>
+          <div class="image" style="height: 200px">
+            <p>
+              <span class="letterEffect">C</span> O N T A C T O
+              <marquee behavior="" direction=""><br />C O N T A C T</marquee>
+            </p>
+          </div>
+          
+          <form action="">
+            <div class="inputs">
+              <label for="fname">Nombre:<br>
+                <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre...">
+              </label><br>
+               <label for="lname">Apellido:<br>
+                <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido...">
+              </label><br>
+                 <label for="email">Correo:<br>
+                  <input type="text" id="email" name="email" placeholder="Ingrese su correo electrónico...">
+                </label><br>
+                <label for="msm">Mensaje:<br>
+                  <textarea name="msm" id="" cols="30" rows="10">Escriba su mensaje...</textarea>
+                </label><br>
+              <input type="submit">
+            </div>
+             
+          </form>
+          
+        </div>
+      </div>
+
+      </div>
+    
     <div class="footer">
-      <h2>Todos los derechos reservados &copy;.</h2>
+      <div class="content">
+        <h2>Todos los derechos reservados &copy;.</h2>
       <p>Diseñado por: Juan Esteban López</p>
-      <p>Github: <a href="https://github.com/elcodigosteve">https://github.com/elcodigosteve</a> </p>
+      <p>
+        Github:
+        <a href="https://github.com/elcodigosteve"
+          >https://github.com/elcodigosteve</a
+        >
+      </p>
+      </div>
+      
     </div>
   </body>
 </html>
